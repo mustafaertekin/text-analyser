@@ -1,0 +1,45 @@
+
+.container {
+    display: flex;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+#right-column {
+    display: block;
+    margin-left: 10%;
+    width: 200px;
+}
+
+.color-bar {
+    width: 200px;
+    margin: 10px;
+}
+
+#left-column {
+    width: 270px;
+}
+
+
+.yellow {
+    progress::-moz-progress-bar { background: yellow };
+    progress::-webkit-progress-value { background: yellow };
+    progress { color: yellow };
+    background-color: yellow;
+}
+
+.darkgreen {
+    background-color: darkgreen;
+    color: white;
+}
+
+.lightgreen {
+    background-color: lightgreen;
+}
+.orange {
+    background-color: orange;
+}
+.red {
+    background-color: red;
+    color: white;
+}
