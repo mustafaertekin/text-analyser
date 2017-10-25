@@ -20,8 +20,10 @@ $("#goButton").on("click", function () {
         totalValue += value;
         average = totalValue / myMap.size;
         let valueProgress = Math.ceil(average) * 10 * value;
+        $("#right-column").append(`<div>${key}:${value}</div>`);
         $("#right-column").append("<progress max='100'><p></p></progress>");
         $("#right-column>progress:last").addClass(getColor(value)).attr('value', valueProgress);
+        
     });
 
     // returns the color according to the average
